@@ -184,7 +184,7 @@ namespace SportStore.UnitTests
             int res1 = ((ProductsListViewModel)target.List("Cat1").Model).PagingInfo.TotalItems;
             int res2 = ((ProductsListViewModel)target.List("Cat2").Model).PagingInfo.TotalItems;
             int res3 = ((ProductsListViewModel)target.List("Cat3").Model).PagingInfo.TotalItems;
-            int resAll = ((ProductsListViewModel)target.List("Cat3").Model).PagingInfo.TotalItems;
+            int resAll = ((ProductsListViewModel)target.List(null).Model).PagingInfo.TotalItems;
 
             //Assert
             Assert.AreEqual(res1, 2);
